@@ -36,3 +36,64 @@ describe 'Deadline', ->
 
         d.getTime().should.equal 'noon'
 
+  describe 'getDate', ->
+    describe 'abbreviating months', ->
+      it 'handles January', ->
+        d = new Deadline new Date(2012, 0, 1)
+
+        d.getDate().should.equal 'Jan. 1, 2012'
+
+      it 'handles February', ->
+        d = new Deadline new Date(2012, 1, 1)
+
+        d.getDate().should.equal 'Feb. 1, 2012'
+
+      it 'handles March', ->
+        d = new Deadline new Date(2012, 2, 1)
+
+        d.getDate().should.equal 'March 1, 2012'
+
+      it 'handles April', ->
+        d = new Deadline new Date(2012, 3, 1)
+
+        d.getDate().should.equal 'April 1, 2012'
+
+      it 'handles May', ->
+        d = new Deadline new Date(2012, 4, 1)
+
+        d.getDate().should.equal 'May 1, 2012'
+
+      it 'handles June', ->
+        d = new Deadline new Date(2012, 5, 1)
+
+        d.getDate().should.equal 'June 1, 2012'
+
+      it 'handles July', ->
+        d = new Deadline new Date(2012, 6, 1)
+
+        d.getDate().should.equal 'July 1, 2012'
+
+      it 'handles August', ->
+        d = new Deadline new Date(2012, 7, 1)
+
+        d.getDate().should.equal 'Aug. 1, 2012'
+
+      it 'handles September', ->
+        d = new Deadline new Date(2012, 8, 1)
+
+        d.getDate().should.equal 'Sept. 1, 2012'
+
+      it 'handles October', ->
+        d = new Deadline new Date(2012, 9, 1)
+
+        d.getDate().should.equal 'Oct. 1, 2012'
+
+      it 'handles November', ->
+        d = new Deadline new Date(2012, 10, 1)
+
+        d.getDate().should.equal 'Nov. 1, 2012'
+
+      it 'handles December', ->
+        d = new Deadline new Date(2012, 11, 1)
+
+        d.getDate().should.equal 'Dec. 1, 2012'

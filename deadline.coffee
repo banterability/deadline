@@ -19,7 +19,21 @@ class Deadline
 
     "#{hour}:#{minute} #{timeOfDay}"
 
+  getDate: ->
+    month = @date.getMonth()
+    date = @date.getDate()
+    year = @date.getFullYear()
+
+    monthName = monthNames[month]
+
+    "#{monthName} #{date}, #{year}"
+
 module.exports = Deadline
+
+
+################
+# Time Helpers #
+################
 
 formatHours = (hours) ->
   return 12 if hours == 0
@@ -32,3 +46,23 @@ topOfHour = (minutes) ->
 formatMinutes = (minutes) ->
   return "0#{minutes}" if minutes < 10
   minutes
+
+
+################
+# Date Helpers #
+################
+
+monthNames = [
+  "Jan."
+  "Feb."
+  "March"
+  "April"
+  "May"
+  "June"
+  "July"
+  "Aug."
+  "Sept."
+  "Oct."
+  "Nov."
+  "Dec."
+]
