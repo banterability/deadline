@@ -27,6 +27,9 @@ class Deadline
 
     monthName = monthNames[month]
 
+    # Special case: Don't show current year
+    return "#{monthName} #{date}" if year == (new Date()).getFullYear()
+
     "#{monthName} #{date}, #{year}"
 
 module.exports = Deadline
