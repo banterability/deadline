@@ -6,8 +6,8 @@ class Deadline
     minutes = @date.getMinutes()
 
     # Special cases: "midnight" and "noon"
-    return "midnight" if hours == 0 and minutes == 0
-    return "noon" if hours == 12 and minutes == 0
+    return 'midnight' if hours == 0 and minutes == 0
+    return 'noon' if hours == 12 and minutes == 0
 
     timeOfDay = if hours < 12 then 'a.m.' else 'p.m.'
     hour = formatHours(hours)
@@ -57,16 +57,16 @@ formatMinutes = (minutes) ->
 ################
 
 monthNames = [
-  "Jan."
-  "Feb."
-  "March"
-  "April"
-  "May"
-  "June"
-  "July"
-  "Aug."
-  "Sept."
-  "Oct."
-  "Nov."
-  "Dec."
+  'Jan.'
+  'Feb.'
+  'March'
+  'April'
+  'May'
+  'June'
+  'July'
+  'Aug.'
+  'Sept.'
+  'Oct.'
+  'Nov.'
+  'Dec.'
 ]

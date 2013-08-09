@@ -8,17 +8,17 @@ describe 'Deadline', ->
       d3 = new Deadline new Date(2013, 3, 1, 14, 4)
       d4 = new Deadline new Date(2013, 3, 1, 22, 4)
 
-      d1.getTime().should.equal "2:04 a.m."
-      d2.getTime().should.equal "10:04 a.m."
-      d3.getTime().should.equal "2:04 p.m."
-      d4.getTime().should.equal "10:04 p.m."
+      d1.getTime().should.equal '2:04 a.m.'
+      d2.getTime().should.equal '10:04 a.m.'
+      d3.getTime().should.equal '2:04 p.m.'
+      d4.getTime().should.equal '10:04 p.m.'
 
     it 'adds periods to times of day', ->
       d1 = new Deadline new Date(2013, 1, 1, 11, 11)
       d2 = new Deadline new Date(2013, 1, 1, 23, 11)
 
-      d1.getTime().should.equal "11:11 a.m."
-      d2.getTime().should.equal "11:11 p.m."
+      d1.getTime().should.equal '11:11 a.m.'
+      d2.getTime().should.equal '11:11 p.m.'
 
     describe 'special cases', ->
       it 'does not show minutes at the top of the hour', ->
@@ -43,10 +43,10 @@ describe 'Deadline', ->
       d3 = new Deadline new Date(2009, 6, 25)
       d4 = new Deadline new Date(2013, 7, 9)
 
-      d1.getDate().should.equal "Jan. 15, 1992"
-      d2.getDate().should.equal "Dec. 31, 2005"
-      d3.getDate().should.equal "July 25, 2009"
-      d4.getDate().should.equal "Aug. 9"
+      d1.getDate().should.equal 'Jan. 15, 1992'
+      d2.getDate().should.equal 'Dec. 31, 2005'
+      d3.getDate().should.equal 'July 25, 2009'
+      d4.getDate().should.equal 'Aug. 9'
 
     describe 'special cases', ->
       it 'hides the current year', ->
