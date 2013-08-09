@@ -19,6 +19,7 @@ class Deadline
 
     "#{hour}:#{minute} #{timeOfDay}"
 
+  # FIX: Incomplete
   getDate: ->
     month = @date.getMonth()
     date = @date.getDate()
