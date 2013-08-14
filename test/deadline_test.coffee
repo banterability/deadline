@@ -1,4 +1,4 @@
-Deadline = require '../deadline'
+Deadline = require '../lib/deadline'
 
 describe 'Deadline', ->
   describe 'getTime', ->
