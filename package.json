@@ -2,7 +2,7 @@
   "name": "deadline",
   "version": "0.1.0",
   "description": "AP-style times for Node.js",
-  "main": "deadline.coffee",
+  "main": "lib/deadline.js",
   "scripts": {
     "test": "mocha"
   },
