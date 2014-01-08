@@ -24,6 +24,7 @@
   "devDependencies": {
     "should": "~1.2.2",
     "mocha": "~1.12.0",
-    "coffee-script": "~1.6.3"
+    "coffee-script": "~1.6.3",
+    "timekeeper": "0.0.4"
   }
 }

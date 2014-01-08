@@ -1,6 +1,13 @@
+timekeeper = require 'timekeeper'
 Deadline = require '../lib/deadline'
 
 describe 'Deadline', ->
+  before ->
+    timekeeper.freeze(new Date(2013, 1, 1))
+
+  after ->
+    timekeeper.reset()
+
   describe 'getTime', ->
     it 'formats times according to AP style', ->
       d1 = new Deadline new Date(2013, 3, 1, 2, 4)
